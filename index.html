@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mathematics Association | A Journey Through Time</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<!-- ================= INTRO ================= -->
+
+<section id="intro" class="screen active">
+
+    <div class="math-symbols">
+        <span>∑</span>
+        <span>π</span>
+        <span>∞</span>
+        <span>√</span>
+        <span>∫</span>
+        <span>1</span>
+        <span>0</span>
+    </div>
+
+    <div class="intro-content">
+
+        <div class="small-title">
+            MATHEMATICS ASSOCIATION
+        </div>
+
+        <h1>
+            A JOURNEY
+            <br>
+            <span>THROUGH TIME</span>
+        </h1>
+
+        <div class="line"></div>
+
+        <p id="introQuote">
+            Before there were calculators…<br>
+            before there were computers…<br>
+            <strong>there were numbers.</strong>
+        </p>
+
+        <button id="startBtn" onclick="startJourney()">
+            START JOURNEY
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section id="journey" class="screen">
+
+    <div class="journey-header">
+
+        <div class="small-title">
+            MATHEMATICS • THROUGH TIME
+        </div>
+
+        <h2 id="journeyTitle">
+            Choose your first number
+        </h2>
+
+        <p id="journeySubtitle">
+            Every journey begins with one.
+        </p>
+
+    </div>
+
+
+    <div class="number-container">
+
+        <button
+            id="num1"
+            class="number-btn unlocked"
+            onclick="openStep(1)"
+        >
+            <span>1</span>
+            <small>ONE</small>
+        </button>
+
+
+        <button
+            id="num2"
+            class="number-btn locked"
+            onclick="openStep(2)"
+            disabled
+        >
+            <span>2</span>
+            <small>TWO</small>
+        </button>
+
+
+        <button
+            id="num3"
+            class="number-btn locked"
+            onclick="openStep(3)"
+            disabled
+        >
+            <span>3</span>
+            <small>THREE</small>
+        </button>
+
+    </div>
+
+
+    <div id="stepContent" class="step-content">
+
+        <div class="step-number">
+            01
+        </div>
+
+        <h3>
+            ONE — THE BEGINNING
+        </h3>
+
+        <p>
+            Click <b>1</b> to begin your journey
+            through the fascinating world of mathematics.
+        </p>
+
+    </div>
+
+
+    <button
+        id="continueBtn"
+        class="continue-btn hidden"
+        onclick="completeStep()"
+    >
+        CONTINUE →
+    </button>
+
+</section>
+
+
+<!-- ================= FINAL TRANSITION ================= -->
+
+<section id="finalReveal" class="screen">
+
+    <div class="final-content">
+
+        <div id="countSequence">
+
+            <span>1</span>
+            <i>→</i>
+
+            <span>2</span>
+            <i>→</i>
+
+            <span>3</span>
+            <i>→</i>
+
+            <span id="infinity">∞</span>
+
+        </div>
+
+
+        <div class="final-line"></div>
+
+        <p>
+            And after travelling through time,<br>
+            numbers have brought us to<br>
+            <strong>one special destination…</strong>
+        </p>
+
+        <div class="destination">
+            ∞
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INVITATION ================= -->
+
+<section id="invitationScreen" class="screen">
+
+    <img
+        id="invitationImage"
+        src="assets/invitation.png"
+        alt="Mathematics Association Invitation"
+    >
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
